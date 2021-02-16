@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		8B91F56C25DC0E4A00E17F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91F56B25DC0E4A00E17F14 /* ContentView.swift */; };
 		8B91F56E25DC0E4A00E17F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B91F56D25DC0E4A00E17F14 /* Assets.xcassets */; };
 		8B91F57125DC0E4A00E17F14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B91F57025DC0E4A00E17F14 /* Preview Assets.xcassets */; };
+		8B91F58725DC395E00E17F14 /* RatingView in Frameworks */ = {isa = PBXBuildFile; productRef = 8B91F58625DC395E00E17F14 /* RatingView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B91F58725DC395E00E17F14 /* RatingView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = RatingViewExample;
+			packageProductDependencies = (
+				8B91F58625DC395E00E17F14 /* RatingView */,
+			);
 			productName = RatingViewExample;
 			productReference = 8B91F56625DC0E4A00E17F14 /* RatingViewExample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 8B91F55D25DC0E4A00E17F14;
+			packageReferences = (
+				8B91F58525DC395E00E17F14 /* XCRemoteSwiftPackageReference "RatingViewSwiftUI" */,
+			);
 			productRefGroup = 8B91F56725DC0E4A00E17F14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B91F58525DC395E00E17F14 /* XCRemoteSwiftPackageReference "RatingViewSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ForceGT/RatingViewSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B91F58625DC395E00E17F14 /* RatingView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B91F58525DC395E00E17F14 /* XCRemoteSwiftPackageReference "RatingViewSwiftUI" */;
+			productName = RatingView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B91F55E25DC0E4A00E17F14 /* Project object */;
 }
